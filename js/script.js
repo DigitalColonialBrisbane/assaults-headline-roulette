@@ -15,7 +15,7 @@ $(function(){
     // var titles = '840 35';
     var titles = '16';
     // Add a byline, eg:
-    var byline = '';
+    var byline = 'Created by <a href="https://digitalcolonialbrisbane.com">Digital Colonial Brisbane</a>.'
     // var byline = '';
     // Add a tagline
     var tagline = 'How well do you know your history of colonial Brisbane criminal underbelly?';
