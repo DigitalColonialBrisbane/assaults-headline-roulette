@@ -3,22 +3,126 @@ $(function(){
 
     // YOU MUST EDIT THIS SECTION
     // You must supply a Trove API key
-    var troveAPIKey = '';
+    var troveAPIKey = '34hr2dtrgub7ha52';
     // Either provide full API query here or include options below
-    var apiQuery = '';
+    var apiQuery = '{
+    "response": {
+        "query": "police AND assault",
+        "zone": [
+            {
+                "name": "newspaper",
+                "records": {
+                    "s": "0",
+                    "n": "1",
+                    "total": "395334",
+                    "next": "/result?q=police+AND+assault&encoding=json&l-decade=18&facet=year&n=0&zone=newspaper&s=1",
+                    "article": [
+                        {
+                            "id": "6262472",
+                            "url": "/newspaper/6262472",
+                            "heading": "ASSAULT ON THE POLICE.",
+                            "category": "Article",
+                            "title": {
+                                "id": "11",
+                                "value": "The Brisbane Courier (Brisbane, Qld. : 1864 - 1933)"
+                            },
+                            "date": "1889-07-15",
+                            "page": 6,
+                            "pageSequence": 6,
+                            "relevance": {
+                                "score": "4.7768817",
+                                "value": "very relevant"
+                            },
+                            "snippet": "... <strong>ASSAULT</strong> ON THE <strong>POLICE.</strong> Yesterday morning, about 11 o'clock, Constable stable Cooke, who was on ...  all of whom are well known to the <strong>police.</strong> When taken to the King-street  watchhouse they were charged with insulting behaviour, assaulting the <strong>police,</strong> and <strong>assault-</strong> ing Constable Cooke, and will ...",
+                            "troveUrl": "http://trove.nla.gov.au/ndp/del/article/6262472?searchTerm=police+AND+assault"
+                        }
+                    ]
+                },
+                "facets": {
+                    "facet": {
+                        "name": "year",
+                        "displayname": "Year",
+                        "term": [
+                            {
+                                "count": "45222",
+                                "url": "/result?q=police+AND+assault&encoding=json&l-decade=18&facet=year&n=0&zone=newspaper&l-year=189",
+                                "search": 189,
+                                "display": 189
+                            },
+                            {
+                                "count": "42241",
+                                "url": "/result?q=police+AND+assault&encoding=json&l-decade=18&facet=year&n=0&zone=newspaper&l-year=188",
+                                "search": 188,
+                                "display": 188
+                            },
+                            {
+                                "count": "40779",
+                                "url": "/result?q=police+AND+assault&encoding=json&l-decade=18&facet=year&n=0&zone=newspaper&l-year=187",
+                                "search": 187,
+                                "display": 187
+                            },
+                            {
+                                "count": "41477",
+                                "url": "/result?q=police+AND+assault&encoding=json&l-decade=18&facet=year&n=0&zone=newspaper&l-year=186",
+                                "search": 186,
+                                "display": 186
+                            },
+                            {
+                                "count": "39001",
+                                "url": "/result?q=police+AND+assault&encoding=json&l-decade=18&facet=year&n=0&zone=newspaper&l-year=185",
+                                "search": 185,
+                                "display": 185
+                            },
+                            {
+                                "count": "39477",
+                                "url": "/result?q=police+AND+assault&encoding=json&l-decade=18&facet=year&n=0&zone=newspaper&l-year=184",
+                                "search": 184,
+                                "display": 184
+                            },
+                            {
+                                "count": "38596",
+                                "url": "/result?q=police+AND+assault&encoding=json&l-decade=18&facet=year&n=0&zone=newspaper&l-year=183",
+                                "search": 183,
+                                "display": 183
+                            },
+                            {
+                                "count": "37387",
+                                "url": "/result?q=police+AND+assault&encoding=json&l-decade=18&facet=year&n=0&zone=newspaper&l-year=182",
+                                "search": 182,
+                                "display": 182
+                            },
+                            {
+                                "count": "36189",
+                                "url": "/result?q=police+AND+assault&encoding=json&l-decade=18&facet=year&n=0&zone=newspaper&l-year=181",
+                                "search": 181,
+                                "display": 181
+                            },
+                            {
+                                "count": "34965",
+                                "url": "/result?q=police+AND+assault&encoding=json&l-decade=18&facet=year&n=0&zone=newspaper&l-year=180",
+                                "search": 180,
+                                "display": 180
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}';
     // Words you want to search for -- separate multiple values with spaces, eg:
     // var keywords = 'weather wragge';
-    var keywords = '';
+    var keywords = 'any';
     // How you want to combine keywords -- all, any, or phrase
-    var keywordType = 'all'
+    var keywordType = '16'
     // Newspaper id numbers -- separate multiple values with spaces, eg:
     // var titles = '840 35';
-    var titles = '';
+    var titles = 'Headline Roulette';
     // Add a byline, eg:
-    var byline = 'Created by <a href="https://timsherratt.org">Tim Sherratt</a>.'
+    var byline = 'Created by <a href="https://digitalcolonialbrisbane.com">Digital Colonial Brisbane</a>.'
     // var byline = '';
     // Add a tagline
-    var tagline = 'How well do you know your Australian history?';
+    var tagline = 'How well do you know your history of colonial Brisbane criminal underbelly?';
     // Leave this alone unless you're publishing on a non-https server
     var useHttps = 'true';
 
