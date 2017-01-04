@@ -5,15 +5,15 @@ $(function(){
     // You must supply a Trove API key
     var troveAPIKey = '34hr2dtrgub7ha52';
     // Either provide full API query here or include options below
-    var apiQuery = 'assault police 18';
+    var apiQuery = '';
     // Words you want to search for -- separate multiple values with spaces, eg:
     // var keywords = 'weather wragge';
-    var keywords = 'any';
+    var keywords = 'assault police 18';
     // How you want to combine keywords -- all, any, or phrase
-    var keywordType = '16'
+    var keywordType = 'any'
     // Newspaper id numbers -- separate multiple values with spaces, eg:
     // var titles = '840 35';
-    var titles = 'Headline Roulette';
+    var titles = '16';
     // Add a byline, eg:
     var byline = 'Created by <a href="https://digitalcolonialbrisbane.com">Digital Colonial Brisbane</a>.'
     // var byline = '';
